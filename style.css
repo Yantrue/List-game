@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Dark Mode */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e;
+  padding: 24px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.7);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #66aaff;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card Game */
+.game {
+  background: #222222;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.7);
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.game:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgb(102 170 255 / 0.6);
+}
+
+.game img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #333333;
+}
+
+.game-content {
+  padding: 20px;
+}
+
+.game-content h2 {
+  font-weight: 600;
+  color: #aaddff;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.game-content p {
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+  .game-content h2 {
+    font-size: 1.25rem;
+  }
+}
